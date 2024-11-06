@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { IndexComponent } from '../components/index/index.component';
+import { AlertComponent } from '../components/alert/alert.component';
 
 export const ALERT_ROUTES: Routes = [
-    { path: 'alert', component: IndexComponent },
+    { path: 'alert', component: AlertComponent },
 ];

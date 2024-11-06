@@ -2,3 +2,66 @@
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
 @import "primeicons/primeicons.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --light: #f6f6f9;
+    --primary: #1976D2;
+    --light-primary: #CFE8FF;
+    --grey: #eee;
+    --dark-grey: #AAAAAA;
+    --dark: #363949;
+    --danger: #D32F2F;
+	--light-danger: #FECDD3;
+    --warning: #FBC02D;
+    --light-warning: #FFF2C6;
+    --success: #388E3C;
+    --light-success: #BBF7D0;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sidebar-background-color{
+    background: linear-gradient(93.2deg, rgb(24, 95, 246) 14.4%, rgb(27, 69, 166) 90.8%);
+}
+
+.sidebar-text-color{
+   color:#125bd0;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body.dark{
+    --light: #181a1e;
+    --grey: #25252c;
+    --dark: #fbfbfb
+}
+
+body{
+    background: var(--grey);
+    overflow-x: hidden;
+}
+
+.custom-dialog .p-dialog-content {
+    padding: 20px; /* Adjust padding for content area */
+}
+
+.custom-dialog .p-dialog-header {
+    padding: 1rem; /* Adjust padding for content area */
+}
+
+.custom-dialog .p-button-label {
+    padding: 2px 8px; /* Adjust padding for content area */
+}
+
+.p-button-label {
+    padding: 2px 8px; /* Adjust padding for content area */
+}

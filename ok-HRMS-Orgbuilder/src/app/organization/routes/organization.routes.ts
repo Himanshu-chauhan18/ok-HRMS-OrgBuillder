@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { IndexComponent } from '../components/index/index.component';
+import { OrganizationComponent } from '../components/organization/organization.component';
 
 export const ORGAZATION_ROUTES: Routes = [
-    { path: 'organization', component: IndexComponent },
+    { path: 'organization', component: OrganizationComponent },
 ];

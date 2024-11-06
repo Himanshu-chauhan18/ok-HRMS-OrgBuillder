@@ -1,0 +1,24 @@
+<main>
+    <div class="header">
+        <div class="left">
+            <h2>{{currentUrl}}</h2>
+            <!-- <ul class="breadcrumb">
+                <li><a href="#">
+                        Analytics
+                    </a></li>
+                <i class='bx bx-chevron-right text-lg' ></i>
+                <li><a href="#" class="active">Shop</a></li>
+            </ul> -->
+        </div>
+        @if (currentUrl=='Dashboard') {
+        <a href="#" class="report" >
+            <i class='bx bx-cloud-download'></i>
+            <span>Activity Logs</span>
+        </a>
+        }
+    </div>
+
+    <div class="min-h-screen bg-light-color mt-3 p-3" >
+        <router-outlet></router-outlet>
+    </div>
+</main>

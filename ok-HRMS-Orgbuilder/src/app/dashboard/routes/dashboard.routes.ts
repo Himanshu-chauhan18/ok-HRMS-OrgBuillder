@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { IndexComponent } from '../components/index/index.component';
+import { DashboardComponent } from '../components/dashboard/dashboard.component';
 
 export const DASHBAORD_ROUTES: Routes = [
-    { path: 'dashboard', component: IndexComponent },
+    { path: 'dashboard', component: DashboardComponent },
 ];

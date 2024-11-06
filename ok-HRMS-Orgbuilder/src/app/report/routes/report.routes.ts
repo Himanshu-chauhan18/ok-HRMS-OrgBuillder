@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { IndexComponent } from '../components/index/index.component';
+import { ReportComponent } from '../components/report/report.component';
 
 export const REPORT_ROUTES: Routes = [
-    { path: 'report', component: IndexComponent },
+    { path: 'report', component: ReportComponent },
 ];

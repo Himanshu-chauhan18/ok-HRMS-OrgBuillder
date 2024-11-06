@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { IndexComponent } from '../components/index/index.component';
+import { PaymentComponent } from '../components/payment/payment.component';
 
 export const PAYMENT_ROUTES: Routes = [
-    { path: 'payment', component: IndexComponent },
+    { path: 'payment', component: PaymentComponent },
 ];
