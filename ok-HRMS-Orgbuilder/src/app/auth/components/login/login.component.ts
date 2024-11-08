@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -9,4 +12,14 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
 
+ constructor(private router: Router, private authService: AuthService){}
+
+ ngOnInit(){
+ 
+ }
+
+ login(){
+  this.authService.login();
+  this.router.navigate(['/dashboard'])
+ }
 }

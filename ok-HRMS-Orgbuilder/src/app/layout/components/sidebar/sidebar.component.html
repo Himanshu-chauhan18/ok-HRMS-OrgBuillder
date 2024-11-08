@@ -4,21 +4,63 @@
         <i class='bx bxs-buildings'></i>        
         <div class="logo-name"><span>ok</span>Builder</div>
     </a>
-    <ul class="side-menu">
-        <li class="mb-4"><a class="text-sm add-org-btn"><i class='bx bx-plus'></i>Add new Organization</a></li>
 
-        <li routerLinkActive="active" ><a 
-            routerLink="dashboard"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
-        <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><a  routerLink="organization"><i class='bx bx-server'></i>Organization</a></li>
-        <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><a routerLink="user"><i class='bx bxs-user-detail'></i>Users</a></li>
-        <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><a  routerLink="alert"><i class='bx bx-message-square-dots'></i>Alert</a></li>
-        <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><a  routerLink="payment"><i class='bx bxs-bank'></i>Payment</a></li>
-        <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><a  routerLink="report"><i class='bx bxs-report' ></i>Report</a></li>
-        <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><a  routerLink="setting"><i class='bx bxs-cog'></i>Settings</a></li>
-    </ul>
+    @if(false){
+        <ul class="side-menu">
+            <li class="mb-4">
+                <a>
+                   <p-skeleton styleClass="sidebar-btn-shimmer-width" />
+                </a>
+            </li>
+            <li class="mb-4">
+                <a>
+                   <p-skeleton shape="circle" size="2rem" styleClass="mr-2" />
+                   <p-skeleton styleClass="sidebar-title-shimmer-width" />
+                </a>
+            </li>
+            <li class="mb-4">
+                <a>
+                   <p-skeleton shape="circle" size="2rem" styleClass="mr-2" />
+                   <p-skeleton styleClass="sidebar-title-shimmer-width" />
+                </a>
+            </li>
+            <li class="mb-4">
+                <a>
+                   <p-skeleton shape="circle" size="2rem" styleClass="mr-2" />
+                   <p-skeleton styleClass="sidebar-title-shimmer-width" />
+                </a>
+            </li>
+            <li class="mb-4">
+                <a>
+                   <p-skeleton shape="circle" size="2rem" styleClass="mr-2" />
+                   <p-skeleton styleClass="sidebar-title-shimmer-width" />
+                </a>
+            </li>
+            <li class="mb-4">
+                <a>
+                   <p-skeleton shape="circle" size="2rem" styleClass="mr-2" />
+                   <p-skeleton styleClass="sidebar-title-shimmer-width" />
+                </a>
+            </li>
+        </ul>
+    }@else{
+        <ul class="side-menu">
+            <li class="mb-4"><a class="text-sm add-org-btn"><i class='bx bx-plus'></i>Add New Organization</a></li>
+    
+            <li routerLinkActive="active" ><a 
+                routerLink="dashboard"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><a  routerLink="organization"><i class='bx bx-server'></i>Organization</a></li>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><a routerLink="user"><i class='bx bxs-user-detail'></i>Users</a></li>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><a  routerLink="alert"><i class='bx bx-message-square-dots'></i>Alert</a></li>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><a  routerLink="payment"><i class='bx bxs-bank'></i>Payment</a></li>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><a  routerLink="report"><i class='bx bxs-report' ></i>Report</a></li>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><a  routerLink="setting"><i class='bx bxs-cog'></i>Settings</a></li>
+        </ul> 
+    }
+
     <ul class="side-menu">
         <li>
-            <a  routerLink="login" class="logout">
+            <a (click)="logout()" routerLink="login" class="logout">
                 <i class='bx bx-log-out-circle'></i>
                 Logout
             </a>

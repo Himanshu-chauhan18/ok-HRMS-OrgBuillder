@@ -1,2 +1,12 @@
-<app-sidebar [isSidebarClosed]="isSidebarClosed "></app-sidebar>
-<app-container (toggleSidebarEvent)="toggleSidebar()" [isSidebarClosed]="isSidebarClosed "></app-container>
+@if(loaderService.isLoading$ | async){
+    <app-home-loader></app-home-loader>
+}@else {
+    @if(isAuthenticated){
+        <app-sidebar [isSidebarClosed]="isSidebarClosed "></app-sidebar>
+        <app-container (toggleSidebarEvent)="toggleSidebar()" [isSidebarClosed]="isSidebarClosed "></app-container>
+    }
+    @else{
+        <router-outlet></router-outlet>
+    }
+}
+

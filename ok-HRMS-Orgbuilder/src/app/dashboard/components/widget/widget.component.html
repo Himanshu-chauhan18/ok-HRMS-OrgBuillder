@@ -1,1 +1,66 @@
-<p>widget works!</p>
+<ul class="insights dashboard-widget ">
+    <li>
+        <div class="flex gap-3">
+            <i class='bx bx-line-chart'></i>  
+            <span class="info">
+                <h3>
+                    1,074,99,8
+                </h3>
+                <p>Total Organizations</p>
+            </span>
+        </div>
+        <p-meterGroup [value]="widget_total_organizations" />
+    </li>
+    <li>
+        <div class="flex gap-3">
+            <i class='bx bxs-pie-chart-alt-2'></i>
+            <span class="info">
+                <h3>
+                    1,074,99,8
+                </h3>
+                <p>Total Users</p>
+            </span>
+        </div>
+        <p-meterGroup [value]="widget_total_users" />
+    </li>
+    <li>
+        <div class="flex gap-3">
+            <i class='bx bxs-bar-chart-alt-2'></i>
+            <span class="info">
+                <h3>
+                    1,074,99,8
+                </h3>
+                <p>Paid Organizations</p>
+            </span>
+        </div>
+        <p-meterGroup [value]="widget_paid_organization" />
+    </li>
+    <li>
+        <div class="flex gap-3">
+            <i class='bx bxs-doughnut-chart'></i>
+            <span class="info">
+                <h3>
+                    1,074,99,8
+                </h3>
+                <p>Trail Organizations</p>
+            </span>
+        </div>
+        <p-meterGroup [value]="widget_trail_organization" />
+    </li>
+</ul>
+
+<div class="bottom-data">
+    <div class="card-1 bg-white">
+        <!-- <div #chart style="width: 10%;"></div> -->
+    </div>
+
+    <div class="card-2 bg-white">
+        <!-- <p-card header="Simple Card">
+            <p class="m-0">
+                Lorem ipsum dolor sit amet...
+            </p>
+        </p-card> -->
+    </div>
+</div>
+
+

@@ -27,14 +27,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.sidebar-background-color{
-    background: linear-gradient(93.2deg, rgb(24, 95, 246) 14.4%, rgb(27, 69, 166) 90.8%);
-}
-
-.sidebar-text-color{
-   color:#125bd0;
-}
-
 html{
     overflow-x: hidden;
 }
@@ -65,3 +57,31 @@ body{
 .p-button-label {
     padding: 2px 8px; /* Adjust padding for content area */
 }
+
+.sidebar-title-shimmer-width{
+    width: 10rem !important;
+    height: 2rem !important;
+}
+
+.sidebar-btn-shimmer-width{
+    width: 14rem !important;
+    height: 2rem !important;
+}
+
+
+.dashboard-widget .p-metergroup-label{
+    color: var(--light);
+}
+
+/* 
+
+@media screen and (max-width: 768px) {
+    .sidebar{
+        width: 200px;
+    }
+
+    .content{
+        width: calc(100% - 60px);
+        left: 200px;
+    }
+} */

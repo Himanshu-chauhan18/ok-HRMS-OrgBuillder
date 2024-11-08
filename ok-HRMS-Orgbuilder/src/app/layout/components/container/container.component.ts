@@ -2,11 +2,12 @@ import { Component, EventEmitter, HostListener, Input, Output, ViewChild, ViewEn
 import { NavbarComponent } from '../navbar/navbar.component';
 import { NgClass } from '@angular/common';
 import { MainComponent } from "../main/main.component";
+import { SidebarComponent } from "../sidebar/sidebar.component";
 
 @Component({
   selector: 'app-container',
   standalone: true,
-  imports: [NavbarComponent, NgClass, MainComponent],
+  imports: [NavbarComponent, NgClass, MainComponent, SidebarComponent],
   templateUrl: './container.component.html',
   styleUrl: './container.component.css',
   encapsulation: ViewEncapsulation.None
